@@ -1,4 +1,4 @@
-defmodule CardGameWar.GameTest do
+defmodule CardGameWar_Test do
   use ExUnit.Case
 
   test "the highest rank wins the cards in the round" do
