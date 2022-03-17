@@ -1,6 +1,5 @@
 defmodule CardGameWar_Test do
   use ExUnit.Case
-  alias CardGameWar.Card
   doctest BecariosBunsan2022B1
 
   test "the highest rank wins the cards in the round" do
