@@ -21,9 +21,7 @@ defmodule CardGameWar_Test do
     assert CardGameWar.get_higher(%Card{suit: :spades, rank: :ace}, %Card{suit: :club, rank: :king}) ==
       %Card{suit: :spades, rank: :ace}
   end
-  #The only thing you see, you know it's gonna be the Ace of Spades
-  #The Ace of Spades
-
+  
   test "if the ranks are equal, clubs beat spades" do
     assert CardGameWar.get_higher(%Card{suit: :club, rank: 8}, %Card{suit: :spade, rank: 8}) ==
       %Card{suit: :club, rank: 8}
