@@ -48,7 +48,7 @@ defmodule DoubletsSolver_Test do
                "mesoarial", "urethylan", "beachless"]
   end
 
-  test "distance" do #! solo funciona para palabras de la misma cantidad de letras
+  test "distance" do
     assert Doublets.Solver.distance("tell", "tall") == 1
     assert Doublets.Solver.distance("animalito", "animalita") == 1
     assert Doublets.Solver.distance("halurgist", "hugeously") == 8
