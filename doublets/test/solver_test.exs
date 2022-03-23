@@ -16,11 +16,9 @@ defmodule DoubletsSolver_Test do
              doublets("wheat", "bread")
   end
 
-
   test "with no word links found" do
     assert [] == doublets("ye", "freezer")
   end
-
 
   test "find_solution" do
     assert Doublets.Solver.find_solution([["agua", "doce", "diez"], ["uno", "dos"]], "dos") == ["uno", "dos"]
@@ -29,8 +27,6 @@ defmodule DoubletsSolver_Test do
              [["agua", "doce", "diez"], ["uno", "dos"], ["baño", "cocina", "camisa"]],
              "diez") == ["agua", "doce", "diez"]
   end
-
-
 
   test "complete_seq_variants" do
     assert Doublets.Solver.complete_seq_variants(["wheat", "cheat"]) == [["wheat", "cheat", "cheap"]]
